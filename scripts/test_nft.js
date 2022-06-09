@@ -7,6 +7,12 @@ async function main() {
   const NFT = await hre.ethers.getContractFactory("VariousVulpe");
   const nft = await NFT.deploy();
 
+  async function printBalances() {
+    console.log("Deployer NFT Count: ", (await nft.balanceOf(deployer.address)).toString());
+    console.log("Addr1 NFT Count: ", (await nft.balanceOf(addr1.address)).toString());
+    console.log("Addr2 NFT Count: ", (await nft.balanceOf(addr2.address)).toString());
+  }
+
   await nft.deployed();
 
   console.log("NFT deployed to:", nft.address);
@@ -14,12 +20,15 @@ async function main() {
   await nft.safeMint(deployer.address);
   await nft.safeMint(addr1.address);
   await nft.safeMint(addr1.address);
-  console.log("Deployer NFT Count: ", (await nft.balanceOf(deployer.address)).toString());
-  console.log("Deployer NFT Count: ", await nft.balanceOf(deployer.address));
-  console.log("Addr1 NFT Count: ", (await nft.balanceOf(addr1.address)).toString());
-  console.log("Addr1 NFT Count: ", await nft.balanceOf(addr1.address));
-  console.log("Addr2 NFT Count: ", (await nft.balanceOf(addr2.address)).toString());
-  console.log("Addr2 NFT Count: ", await nft.balanceOf(addr2.address));
+
+  await printBalances();
+
+  console.log("Sending NFT from Addr1 to Addr2");
+  await nft.connect(addr1).transferFrom(addr1.address, addr2.address, 2);
+
+  await printBalances();
+
+  console.log(await nft.tokenURI(0));
 }
 
 // We recommend this pattern to be able to use async/await everywhere

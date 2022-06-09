@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/rose/Developer/NFT14/variousvulpenft/contracts/VariousVulpe.sol": {
-      "lastModificationDate": 1654667712183,
-      "contentHash": "25c768777918c0ca5623372f7866c772",
+      "lastModificationDate": 1654750263088,
+      "contentHash": "9d48fd9b37be9a69c69e115f5f0ccfb3",
       "sourceName": "contracts/VariousVulpe.sol",
       "solcConfig": {
         "version": "0.8.4",

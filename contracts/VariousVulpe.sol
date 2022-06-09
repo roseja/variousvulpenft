@@ -14,7 +14,7 @@ contract VariousVulpe is ERC721, ERC721Enumerable, Ownable {
     constructor() ERC721("VariousVulpe", "VVP") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://gateway.pinata.cloud/ipfs/QmbCUs9ciCnsvaiJzJ3JzGQmqRpZb3NFyo5zVfoWX5Ln1S";
+        return "https://gateway.pinata.cloud/ipfs/QmWY6vc9LuaEf3qyLkdXt6qLwLcLcQCGs1BsYMk1XTjwJm/";
     }
 
     function safeMint(address to) public onlyOwner {
