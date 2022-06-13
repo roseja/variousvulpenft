@@ -22,7 +22,7 @@ async function main() {
   logger.info(`NFT deployed to: ${nft.address}`);
 
   //Mint token
-  for (i=0; i < 10; i++) {
+  for (i=0; i < 1000; i++) {
     var nextTokenId = await nft.totalSupply();
     var tx = await nft.safeMint(owner.address);
     

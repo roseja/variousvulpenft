@@ -3,6 +3,8 @@
 
 This NFT project was created as part of the NFT14 course offered by https://nft14.xyz/
 
+The NFT collection can be found on OpenSea Test Net: https://testnets.opensea.io/collection/variousvulpe
+
 The art work is a collection of images offered by [Canva Pro](https://www.canva.com/) featuring multiple colors of foxes in different locations and having different accessories.
 
 ---
