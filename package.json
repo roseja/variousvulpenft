@@ -20,6 +20,6 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
     "dotenv": "^16.0.1",
-    "winston": "^3.7.2"
+    "winston": "^3.8.0"
   }
 }
