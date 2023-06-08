@@ -18,7 +18,7 @@
     "hardhat": "^2.9.7"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/contracts": "^4.9.1",
     "dotenv": "^16.0.1",
     "winston": "^3.7.2"
   }
